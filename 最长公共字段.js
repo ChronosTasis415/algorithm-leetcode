@@ -14,7 +14,6 @@
   解释：输入不存在公共前缀。
 */
 
-// 拿第一个词做基准
 var longestCommonPrefix = function (strs) {
   const len = strs.length;
 
