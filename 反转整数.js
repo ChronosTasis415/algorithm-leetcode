@@ -25,7 +25,7 @@ var reverse = function (x) {
     console.log(res);
     if (res > Math.pow(2, 31) - 1 || res < Math.pow(-2, 31)) return 0;
     // x = Math.floor(x / 10);
-    x = ~~(x / 10);
+    x = ~~(x / 10); // 取整数
   }
   return res;
 };
