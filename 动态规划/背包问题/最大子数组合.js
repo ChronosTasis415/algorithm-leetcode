@@ -21,6 +21,7 @@ var maxSubArray = function (nums) {
   let pre = 0;
   let max = nums[0];
   for (let i = 0; i < nums.length; i++) {
+    // 意思是 如果加上nums[i] 后数字变小了 重新计算位置 从i开始
     pre = Math.max(pre + nums[i], nums[i]);
     max = Math.max(max, pre);
   }
@@ -38,6 +39,7 @@ var maxSubArray = function (nums) {
 //   return maxAns;
 // };
 
-const res = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+// const res = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+const res = maxSubArray([-2, 1, 0]);
 
 console.log(res);
